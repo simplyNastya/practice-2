@@ -1,8 +1,263 @@
+
+/* Utilities */
+
 :root {
     --accent-color: #ED4C5C;
-    --background-color: #FFFFFF;
+    --light-color: #FFFFFF;
+    --font-color: #000000;
+    --secondary-font-color: #101010;
+    --secondary-bcg: #FAFAFA;
 }
 
 body {
-    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: var(--light-color);
+    color: var(--font-color);
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Header */
+
+.header {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    background-color: var(--accent-color);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-transform: uppercase;
+
+    color: var(--light-color);
+    
+}
+
+.nav-item {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-transform: uppercase;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--light-color);
+}
+
+.auth-item {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-transform: uppercase;
+
+    color: var(--light-color);
+    background-color: inherit;
+    border: 1px solid var(--light-color);
+
+    cursor: pointer;
+}
+
+.auth-item:hover,
+.auth-item:focus {
+    font-weight: 700;
+
+    background-color: var(--light-color);
+    color: var(--accent-color)
+}
+
+/* Hero */
+
+.hero {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    color: var(--light-color);
+}
+
+.hero-title {
+    font-size: 72px;
+    line-height: calc(86 / 72);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+}
+
+.hero-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-transform: uppercase;
+
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    border: 1px solid var(--light-color);
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+/* Overview */
+
+.overview-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(43 / 36);
+}
+
+.overview-text {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+}
+
+.overview-link {
+    color: var(--accent-color);
+}
+
+/* Features */
+
+.features {
+    background-color: var(--secondary-bcg);
+}
+
+.features-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(43 / 36);
+    text-align: center;
+}
+
+/* Technology */
+
+.technology-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(43 / 36);
+    text-align: center;
+}
+
+.technology-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    color: var(--secondary-font-color);
+}
+
+.subtitle-description {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+}
+
+/* Saving money */
+
+.saving-money {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+.saving-money-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(43 / 36);
+}
+
+.saving-money-description {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+}
+
+/* Contact */
+
+.contact-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(43 / 36);
+}
+
+.contact-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+}
+
+.contact-btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    border: 1.5px solid var(--accent-color);
+    border-radius: 6px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondary-bcg);
+}
+
+.footer-subtitle {
+    color: var(--secondary-font-color);
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+}
+
+.footer-address {
+    font-size: 12px;
+    line-height: calc(18 / 12);
+
+    color: var(--secondary-font-color);
+}
+
+.services-list-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    text-transform: capitalize;
+
+    color: var(--font-color);
+}
+
+.touch-email {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    color: var(--secondary-font-color);
+}
+
+.touch-tel {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    
+    color: #121212;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    color: var(--secondary-font-color);
 }
