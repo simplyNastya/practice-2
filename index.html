@@ -7,57 +7,96 @@
     <title>CloudBudget</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <a href="./index.html" class="link">
-        <img src="./images/dashicons-cloud.png" alt="Logo CloudBudget">
-        <p class="logo">CloudBudget</p>
-        </a>
-        <nav>
-            <ul>
-                <li class="nav-item list"><a href="#overview" class="nav-link link">OVERVIEW</a></li>
-                <li class="nav-item list"><a href="#features" class="nav-link link">FEATURES</a></li>
-                <li class="nav-item list"><a href="#technology" class="nav-link link">TECHNOLOGY</a></li>
-                <li class="nav-item list"><a href="#contact" class="nav-link link">CONTACT</a></li>
-                <li class="nav-item list"><a href="#about" class="nav-link link">about</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li class="list"><button type="button" class="auth-item">sign in</button></li>
-            <li class="list"><button type="button" class="auth-item">sign up</button></li>
-        </ul>
+            <div class="container">
+                <a href="./index.html" class="link">
+                    <img src="./images/dashicons-cloud.png" alt="Logo CloudBudget">
+                    <p class="logo">CloudBudget</p>
+                </a>
+                <nav>
+                    <ul>
+                        <li class="nav-item list"><a href="#overview" class="nav-link link">OVERVIEW</a></li>
+                        <li class="nav-item list"><a href="#features" class="nav-link link">FEATURES</a></li>
+                        <li class="nav-item list"><a href="#technology" class="nav-link link">TECHNOLOGY</a></li>
+                        <li class="nav-item list"><a href="#contact" class="nav-link link">CONTACT</a></li>
+                        <li class="nav-item list"><a href="#about" class="nav-link link">about</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li class="list"><button type="button" class="auth-item">sign in</button></li>
+                    <li class="list"><button type="button" class="auth-item">sign up</button></li>
+                </ul>
+            </div>
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-title">CloudBudget</h1>
-            <p class="hero-text">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of
-            Up to €4.99</p>
-            <button type="button" class="hero-btn">call back</button>
+            <div class="container">
+                <h1 class="hero-title">CloudBudget</h1>
+                <p class="hero-text">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99</p>
+                <button type="button" class="hero-btn">call back</button>
+            </div>
         </section>
 
         <section class="overview" id="overview">
-            <h2 class="overview-title">Easy to Use Cloud Budget Management Software</h2>
-            <p class="overview-text">Our software is made so you can access and manage your budget and expenses online at any time from any device. It
-            provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a
-            glance. Read below to find out more.</p>
-            <a href="" class="overview-link link">Learn More</a>
-            <img src="./images/video_bg.jpg" alt="Meeting" width="445" height="331">
+            <div class="container">
+                <div class="content-width">
+                    <h2 class="overview-title">Easy to Use Cloud Budget Management Software</h2>
+                    <p class="overview-text">Our software is made so you can access and manage your budget and expenses online at any
+                        time
+                        from any device. It
+                        provides detailed income and expense reports with graphs so you can easilly see your spending patterns and
+                        budget at
+                        a
+                        glance. Read below to find out more.</p>
+                    <a href="" class="overview-link link">Learn More</a>
+                </div>
+                <img src="./images/video_bg.jpg" alt="Meeting" width="445" height="331">
+            </div>
         </section>
 
         <section class="features" id="features">
+           <div class="container">
             <h2 class="features-title">Features</h2>
             <ul>
                 <li class="features-item list"><img src="./images/bg.jpg" alt="Card 1" width="350" height="250"></li>
                 <li class="features-item list"><img src="./images/card-2.png" alt="Card 2" width="350" height="250"></li>
                 <li class="features-item list"><img src="./images/card-3.png" alt="Card 3" width="350" height="250"></li>
             </ul>
+           </div>
         </section>
 
         <section class="technology" id="technology">
-            <h2 class="technology-title">Technology</h2>
+            <div class="container">
+                <h2 class="technology-title">Technology</h2>
+                <ol>
+                    <li class="technology-item">
+                        <img src="./images/frame-3.png" alt="">
+                        <h3 class="technology-subtitle">Cloud Storage</h3>
+                        <p class="subtitle-description">Access your account from anywhere in the world on any device</p>
+                    </li>
+                    <li class="technology-item">
+                        <img src="./images/frame-4.png" alt="">
+                        <h3 class="technology-subtitle">Secure</h3>
+                        <p class="subtitle-description">All your information is stored on secure cloud servers</p>
+                    </li>
+                    <li class="technology-item">
+                        <img src="./images/frame-5.png" alt="">
+                        <h3 class="technology-subtitle">PDF Download</h3>
+                        <p class="subtitle-description">Download any of your reports in PDF format</p>
+                    </li>
+                    <li class="technology-item">
+                        <img src="./images/frame-6.png" alt="">
+                        <h3 class="technology-subtitle">CSV Download</h3>
+                        <p class="subtitle-description">All your information is stored on secure cloud servers</p>
+                    </li>
+                </ol><h2 class="technology-title">Technology</h2>
             <ol>
                 <li class="technology-item">
                     <img src="./images/frame-3.png" alt="">
@@ -80,67 +119,80 @@
                     <p class="subtitle-description">All your information is stored on secure cloud servers</p>
                 </li>
             </ol>
+            </div>
         </section>
 
         <section class="saving-money">
-            <h2 class="saving-money-title">Stay focused on saving money</h2>
-            <p class="saving-money-description">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can
-            easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
-            <ul>
-                <li class="list"><a href="" target="_blank" rel="noopener norefferer"><img src="./images/ion-logo-google-playstore.png" alt="Logo Google Play" width="32"></a></li>
-                <li class="list"><a href="" target="_blank" rel="noopener norefferer"><img src="./images/ion-logo-apple-appstore.png" alt="Logo App Store" width="32"></a></li>
-                <li class="list"><a href="" target="_blank" rel="noopener norefferer"><img src="./images/simple-icons-windows.png" alt="Logo Windows store" width="32"></a></li>
-            </ul>
-            <ul>
-                <li class="list"><img src="./images/human3.png" alt="Human 1" width="445" height="331"></li>
-                <li class="list"><img src="./images/human2.jpg" alt="Human 2" width="445" height="331"></li>
-                <li class="list"><img src="./images/human1.png" alt="Human 3" width="445" height="331"></li>
-            </ul>
+            <div class="container">
+                <div class="content-width">
+                    <h2 class="saving-money-title">Stay focused on saving money</h2>
+                    <p class="saving-money-description">It is important to stay focused on saving money in any way you can. We help you
+                        monitor your spending habits so you can
+                        easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
+                    <ul>
+                        <li class="list"><a href="" target="_blank" rel="noopener norefferer"><img
+                                    src="./images/ion-logo-google-playstore.png" alt="Logo Google Play" width="32"></a></li>
+                        <li class="list"><a href="" target="_blank" rel="noopener norefferer"><img
+                                    src="./images/ion-logo-apple-appstore.png" alt="Logo App Store" width="32"></a></li>
+                        <li class="list"><a href="" target="_blank" rel="noopener norefferer"><img src="./images/simple-icons-windows.png"
+                                    alt="Logo Windows store" width="32"></a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li class="list"><img src="./images/human3.png" alt="Human 1" width="445" height="331"></li>
+                    <li class="list"><img src="./images/human2.jpg" alt="Human 2" width="445" height="331"></li>
+                    <li class="list"><img src="./images/human1.png" alt="Human 3" width="445" height="331"></li>
+                </ul>
+            </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="contact-title">Contact</h2>
-            <p class="contact-text">Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
-            <ul>
-                <li class="list"><input type="text" placeholder="First Name"></li>
-                <li class="list"><input type="text" placeholder="Last Name"></li>
-                <li class="list"><input type="text" placeholder="Phone Number"></li>
-                <li class="list"><input type="text" placeholder="Select Service"></li>
-            </ul>
-            <button type="button" class="contact-btn">Submit Now</button>
+            <div class="container">
+                <h2 class="contact-title">Contact</h2>
+                <p class="contact-text">Questions or concerns? Just fill out the form below and our support team will get back to you
+                    within 24 hours</p>
+                <ul>
+                    <li class="list"><input type="text" placeholder="First Name"></li>
+                    <li class="list"><input type="text" placeholder="Last Name"></li>
+                    <li class="list"><input type="text" placeholder="Phone Number"></li>
+                    <li class="list"><input type="text" placeholder="Select Service"></li>
+                </ul>
+                <button type="button" class="contact-btn">Submit Now</button>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <p class="footer-subtitle">Address</p>
-        <address>
-            <p class="footer-address">Pipang Ltd, Griva Digeni,
-            81-83 Jacovides Tower, 1st Floor
-            1090 Picosia USA</p>
-        </address>
-        <p class="footer-subtitle">Services</p>
-        <ul>
-            <li class="list"><a href="#overview" class="services-list-item link">overview</a></li>
-            <li class="list"><a href="#features" class="services-list-item link">features</a></li>
-            <li class="list"><a href="#technology" class="services-list-item link">technology</a></li>
-            <li class="list"><a href="" class="services-list-item link">terms & Conditions</a></li>
-            <li class="list"><a href="" class="services-list-item link">Privecy</a></li>
-        </ul>
-        <p class="footer-subtitle">Get in Touch</p>
-        <address>
+        <div class="container">
+            <p class="footer-subtitle">Address</p>
+            <address>
+                <p class="footer-address">Pipang Ltd, Griva Digeni,
+                    81-83 Jacovides Tower, 1st Floor
+                    1090 Picosia USA</p>
+            </address>
+            <p class="footer-subtitle">Services</p>
             <ul>
-                <li class="list"><a href="mailto:info@cloudbudget.com" class="touch-email link">info@cloudbudget.com</a></li>
-                <li class="list"><a href="tel:+18447217120" class="touch-tel link">+1 844-721-7120</a></li>
+                <li class="list"><a href="#overview" class="services-list-item link">overview</a></li>
+                <li class="list"><a href="#features" class="services-list-item link">features</a></li>
+                <li class="list"><a href="#technology" class="services-list-item link">technology</a></li>
+                <li class="list"><a href="" class="services-list-item link">terms & Conditions</a></li>
+                <li class="list"><a href="" class="services-list-item link">Privecy</a></li>
             </ul>
-        </address>
-        <ul>
-            <li class="list"><a href="" target="_blank" rel="noopener norefferer" class="link">Facebok</a></li>
-            <li class="list"><a href="" target="_blank" rel="noopener norefferer" class="link">LinkedIn</a></li>
-            <li class="list"><a href="" target="_blank" rel="noopener norefferer" class="link">Twitter</a></li>
-        </ul>
-        <p class="footer-subtitle">We Support</p>
-        <img src="./images/secure-p-1.jpg" alt="Visa Master Card" width="216" height="31">
-        <p class="copyright">Copyright 2018 CloudBudget</p>
-    </footer>
-    
+            <p class="footer-subtitle">Get in Touch</p>
+            <address>
+                <ul>
+                    <li class="list"><a href="mailto:info@cloudbudget.com" class="touch-email link">info@cloudbudget.com</a></li>
+                    <li class="list"><a href="tel:+18447217120" class="touch-tel link">+1 844-721-7120</a></li>
+                </ul>
+            </address>
+            <ul>
+                <li class="list"><a href="" target="_blank" rel="noopener norefferer" class="link">Facebok</a></li>
+                <li class="list"><a href="" target="_blank" rel="noopener norefferer" class="link">LinkedIn</a></li>
+                <li class="list"><a href="" target="_blank" rel="noopener norefferer" class="link">Twitter</a></li>
+            </ul>
+            <p class="footer-subtitle">We Support</p>
+            <img src="./images/secure-p-1.jpg" alt="Visa Master Card" width="216" height="31">
+            <p class="copyright">Copyright 2018 CloudBudget</p>
+        </div>
+    </footer>   
 </body>
 </html>
